@@ -23,7 +23,7 @@ int main() {
     printf("new balance of ac1  : %f\n new ID of ac1 : %d\n", ac1.balance, ac1.ownerId);
     printf("new balance of ac2 %f\n  new ID of ac2 : %d\n", ac2.balance, ac2.ownerId);
     return 0;
-    } */
+    } 
 #include "person.h"
 int main() {
     person p1,p2;
@@ -47,3 +47,14 @@ int main() {
     }
     return 0;
 }
+
+#include <stdio.h>
+#include "temp.h"
+int main() {
+    temp t;
+    printf("Enter the celsius : ");
+    scanf("%f", &t.celsius);
+    calculatefarenheit(&t);
+    printf("farenheit : %f", t.farenheit);
+    return 0;
+}*/
