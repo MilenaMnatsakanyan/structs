@@ -48,7 +48,7 @@ int main() {
     return 0;
 }
 
-#include <stdio.h>
+
 #include "temp.h"
 int main() {
     temp t;
@@ -57,4 +57,16 @@ int main() {
     calculatefarenheit(&t);
     printf("farenheit : %f", t.farenheit);
     return 0;
+}
+
+#include "circle.h"
+int main() {
+    circle c;
+    printf("Enter the radius : ");
+    scanf("%f", &c.radius);
+    areacirc(&c);
+    printf("area of circle is : %f\n", c.area);
+    printf("circumference of circle is : %f", c.circumference);
+    return 0;
+    
 }*/
