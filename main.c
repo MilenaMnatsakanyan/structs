@@ -131,4 +131,26 @@ int main() {
 	printf("%d\n", p2.y);
 return 0;
 }
+#include <stdio.h>
+#include "person.h"
+int main() {
+	person p;
+	printf("Enter your height : ");
+	scanf("%f", &p.height);
+	printf("Enter your weight : ");
+	scanf("%f", &p.weight);
+	
+	int result = bmiper(&p);
+	if(result == 1){
+		printf("Overweight");
+	}
+	else if(result == 0){
+		printf("Normal");
+	}
+	else if(result == -1) {
+	printf("Underweight");
+	}
+return 0;
+}
+
 */
