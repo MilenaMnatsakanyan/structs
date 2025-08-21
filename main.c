@@ -112,5 +112,23 @@ int main() {
 return 0;
 }
 
-
+#include <stdio.h>
+#include "pair.h"
+int main() {
+	pair p1, p2;
+	printf("Enter the x for p1 :");
+	scanf("%d", &p1.x);
+	printf("Enter the y for p1 :");
+	scanf("%d", &p1.y);
+	printf("Enter the x for p2 : ");
+	scanf("%d", &p2.x);
+	printf("Enter the y for p2 : ");
+	scanf("%d", &p2.y);
+	swap(&p1, &p2);
+	printf("%d\n", p1.x);
+	printf("%d\n", p1.y);
+	printf("%d\n", p2.x);
+	printf("%d\n", p2.y);
+return 0;
+}
 */
