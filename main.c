@@ -69,4 +69,48 @@ int main() {
     printf("circumference of circle is : %f", c.circumference);
     return 0;
     
-}*/
+}
+#include <stdio.h>
+#include "rational.h"
+int main() {
+	rational n1, n2;
+	printf("Enter the numerator of first number : ");
+	scanf("%d", &n1.numerator);
+	printf("Enter the denominator of first number : ");
+	scanf("%d", &n1.denominator);
+	printf("Enter the numerator of second number : ");
+	scanf("%d", &n2.numerator);
+	printf("Enter the denominator of second number : ");
+	scanf("%d", &n2.denominator);
+	rational res = sum(&n1, &n2);	
+	printf("denominator n1 is :  %d\n", res.numerator);
+	printf("numerator n1 is : %d\n",res.denominator); 
+	rational res2 = product(&n1, &n2);
+	printf("numerator n2 is : %d\n", res2.numerator);
+	printf("denominator n2 is : %d", res2.denominator);
+return 0;
+}
+
+#include <stdio.h>
+#include "rational.h"
+int main() {
+	rational n1, n2;
+	printf("Enter the numerator of first number : ");
+	scanf("%d", &n1.numerator);
+	printf("Enter the denominator of first number : ");
+	scanf("%d", &n1.denominator);
+	printf("Enter the numerator of second number : ");
+	scanf("%d", &n2.numerator);
+	printf("Enter the denominator of second number : ");
+	scanf("%d", &n2.denominator);
+	rational res = sum(&n1, &n2);	
+	printf("denominator n1 is :  %d\n", res.numerator);
+	printf("numerator n1 is : %d\n",res.denominator); 
+	rational res2 = product(&n1, &n2);
+	printf("numerator n2 is : %d\n", res2.numerator);
+	printf("denominator n2 is : %d", res2.denominator);
+return 0;
+}
+
+
+*/
