@@ -152,5 +152,16 @@ int main() {
 	}
 return 0;
 }
+#include <stdio.h>
+#include "number.h"
+int main() {
+	number n;
+	 assign(&n);
+	printf("int Value is %d\n", n.intValue);
+	printf("float avlue is%f", n.floatValue);
+return 0;  
+		
+}
+
 
 */
