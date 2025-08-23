@@ -162,6 +162,73 @@ int main() {
 return 0;  
 		
 }
+#include "data.h"
+int main() {
+	data d;
+	assigndata(&d);
+	printf("int Value is %d\n", d.intValue);
+	printf("char value is : %c", d.charValue);
+return 0;  
+		
+}
+
+#include "value.h"
+int main() {
+	value v;
+	intrepres(&v);
+	printf("float value is : %f\n", v.floatValue);
+	printf("int value is : %d", v.intValue);
+return 0;
+		
+}
+#include "measurement.h"
+int main() {
+	measurement m;
+	int a;
+	printf("Enter 1 if you want to enter height : \nEnter 2 if you want to enter weight : ");
+	scanf("%d", &a);
+	if(a == 1 || a == 2){
+		print(&m, a);
+}
+	
+	return 0;
+		
+}
+#include "flag.h"
+int main() {
+	flag f;
+	assignnum(&f);
+	printf(" %c", f.flag);
+return 0;
+}
+#include "time.h"
+int main() {
+	time t;
+	
+	print(&t);
+	printf("%f", t.s.totalHours);
+return 0;
+}
+#include "currency.h"
+int main() {
+	currency c;
+	assigncurrency(&c);
+	printf("usd is : %f\n", c.usd);
+	printf("eur is : %f", c.eur);
+return 0;
+}
+#include "seasons.h"
+int main() {
+	SEASONS month;
+	printf("Enter the season : for winter 0 , for spring 1 , for summer 2 , for fall 3\n");
+	int num = 0;
+	do{
+		scanf("%d",&num);
+	}
+	while(num < 0 || num > 3);
+	getnum(num);
+	return 0;
+}
 
 
 */
